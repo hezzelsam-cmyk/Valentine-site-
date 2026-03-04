@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Video 2 for Alice</title>
+<style>
+    body, html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        width: 100%;
+        background-color: #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    video {
+        max-width: 90%;
+        max-height: 90%;
+        border-radius: 15px;
+        box-shadow: 0 0 50px #FFD700;
+    }
+    .nav-button {
+        position: fixed;
+        bottom: 30px;
+        background-color: #FFD700;
+        border: none;
+        padding: 15px 25px;
+        font-size: 1.2em;
+        color: #000;
+        cursor: pointer;
+        border-radius: 12px;
+        transition: 0.3s;
+    }
+    .nav-button:hover {
+        background-color: #FFC300;
+    }
+</style>
+</head>
+<body>
+
+<video controls autoplay muted>
+    <source src="assets/videos/video2.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+
+<!-- Navigation buttons -->
+<button class="nav-button" onclick="location.href='page3.html'">⬅️ Back</button>
+<button class="nav-button" style="right:30px;" onclick="location.href='page5.html'">Next ➡️</button>
+
+</body>
+</html>
